@@ -25,14 +25,14 @@
 .from {
   position: absolute;
   top: 100%;
-  font-size: 11px;
+  font-size: 1rem;
 }
 
 .to {
   position: absolute;
   top: 100%;
   right: 0;
-  font-size: 11px;
+  font-size: 1rem;
 }
 
 .img-tumb-left {

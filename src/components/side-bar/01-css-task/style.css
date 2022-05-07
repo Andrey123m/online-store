@@ -1,1 +1,43 @@
 /* put your styles in this file */
+div {
+  /* outline: 1px solid red; */
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 18px;
+}
+
+.filters-panel {
+  width: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.filters-panel-content {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.133);
+  border-radius: 5px 5px 5px 5px;
+}
+
+.CLEAR-ALL-FILTERS {
+  width: 100%;
+  background: #6d5ff0;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-shadow: 0 2px 8px;
+}
+
+.form-group {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

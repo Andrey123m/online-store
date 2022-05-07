@@ -3,12 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <title>SideBar component</title>
+  <link rel="stylesheet" href="../../double-slider/01-css-task/style.css">
+  <link rel="stylesheet" href="../../filters-list/01-css-task/style.css">
   <link rel="stylesheet" href="style.css">
 
   <style>
     .wrapper {
       width: 400px;
-      margin: 100px auto;
+      margin: 10px auto;
     }
   </style>
 </head>
@@ -16,6 +18,133 @@
 <main>
   <div class="wrapper">
     <!-- SideBar component -->
+    <div class="filters-panel">
+      <div class="filters-panel-content-and-button">
+        <div class="filters-panel-content">
+          <div class="form-group">
+            <h3>Price</h3>
+            <!-- DoubleSlider component -->
+            <div class="ranger-slider">
+              <span class="from">0 UAH</span>
+              <div class="box-range-slider-inner">
+                <span class="range-slider-inner"></span>
+                <span class="img-tumb-left"><img src="../../double-slider/01-css-task/img/range-thumb-icon.a4dd7a38.svg" alt="slider"> </span>
+                <span class="img-tumb-right"><img src="../../double-slider/01-css-task/img/range-thumb-icon.a4dd7a38.svg" alt="slider"> </span>
+              </div>
+              <span class="to">85000 UAH</span>
+            </div>
+          </div>
+          
+            <div class="categories-filter">
+              <ul class="categories-filter-list">
+              <h3>Category</h3>
+                <li class="categories-filter-list-li">
+                  <div class="categories-filter-checkbox">
+                  </div> Monitors
+                </li>
+                <li class="categories-filter-list-li">
+                  <div class="categories-filter-checkbox">
+                  </div> Laptops
+                </li>
+                <li class="categories-filter-list-li">
+                  <div class="categories-filter-checkbox">
+                  </div> Video cards
+                </li>
+                <li class="categories-filter-list-li">
+                  <div class="categories-filter-checkbox">
+                  </div> Gaiming keyboards
+                </li>
+                <li class="categories-filter-list-li">
+                  <div class="categories-filter-checkbox">
+                  </div> Computer mouse
+                </li>
+                <li class="categories-filter-list-li">
+                  <div class="categories-filter-checkbox">
+                  </div> SSD
+                </li>
+                <li class="categories-filter-list-li">
+                  <div class="categories-filter-checkbox">
+                  </div> Sound cards
+                </li>
+                <li class="categories-filter-list-li">
+                  <div class="categories-filter-checkbox">
+                  </div> RAM
+                </li>
+              </ul>
+            </div>
+          
+          <div class="brand-filter">
+          <div class="categories-brands">
+            <ul class="categories-brands-list"><h3>Brands</h3>
+              <li class="categories-brands-list-li">
+                <div class="categories-brands-checkbox">
+                </div> Asus
+              </li>
+              <li class="categories-brands-list-li">
+                <div class="categories-brands-checkbox">
+                </div> Acer
+              </li>
+              <li class="categories-brands-list-li">
+                <div class="categories-brands-checkbox">
+                </div> Apple
+              </li>
+              <li class="categories-brands-list-li">
+                <div class="categories-brands-checkbox">
+                </div> Dell
+              </li>
+              <li class="categories-brands-list-li">
+                <div class="categories-brands-checkbox">
+                </div> Dynamode
+              </li>
+              <li class="categories-brands-list-li">
+                <div class="categories-brands-checkbox">
+                </div> Gygabyte
+              </li>
+              <li class="categories-brands-list-li">
+                <div class="categories-brands-checkbox">
+                </div> Kingston
+              </li>
+              <li class="categories-brands-list-li">
+                <div class="categories-brands-checkbox">
+                </div> Lenovo
+              </li>
+              <li class="categories-brands-list-li">
+                <div class="categories-brands-checkbox">
+                </div> Logitech
+              </li>
+              <li class="categories-brands-list-li">
+                <div class="categories-brands-checkbox">
+                </div> MSI
+              </li>
+              <li class="categories-brands-list-li">
+                <div class="categories-brands-checkbox">
+                </div> BenQ
+              </li>
+              <li class="categories-brands-list-li">
+                <div class="categories-brands-checkbox">
+                </div> A4Tech
+              </li>
+            </ul>
+          </div>
+          </div>
+          <div class="form-group">
+          <h3>Rating</h3>
+          <!-- DoubleSlider component -->
+          <div class="ranger-slider">
+            <span class="from">0</span>
+            <div class="box-range-slider-inner">
+              <span class="range-slider-inner"></span>
+              <span class="img-tumb-left"><img src="../../double-slider/01-css-task/img/range-thumb-icon.a4dd7a38.svg" alt="slider"> </span>
+              <span class="img-tumb-right"><img src="../../double-slider/01-css-task/img/range-thumb-icon.a4dd7a38.svg" alt="slider"> </span>
+            </div>
+            <span class="to">5</span>
+          </div>
+          </div>
+          
+        </div>
+        <button class="CLEAR-ALL-FILTERS">CLEAR ALL FILTERS</button>
+      </div>
+    </div>
   </div>
 </main>
 </body>
