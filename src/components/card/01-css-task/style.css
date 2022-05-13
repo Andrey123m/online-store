@@ -1,7 +1,7 @@
 /* put your styles in this file */
 
 .card-component {
-  width: 317px;
+  /* width: 317px; */
   height: 394px;
   background: #FFFFFF;
   border: 0px solid;
@@ -16,9 +16,9 @@
   }
   
   .card-component-foto {
-    width: 90%;
-    height: 200px;
-  margin: 0;
+    width: 200px;
+    /* height: 200px; */
+  margin: 12px 12px 0;
   }
   
   img {
@@ -51,7 +51,7 @@
   
   .card-component-about {
     width: 80%;
-    height: 31px;
+    height: 100px;
     font-size: 12px;
     }
   
