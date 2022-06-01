@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Card component</title>
-  <link rel="stylesheet" href="../../../styles/style.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../components/card/01-css-task/style.css">
 
   <style>
     .wrapper {
@@ -17,7 +18,7 @@
   <div id="root" class="wrapper"></div>
 
   <script type="module">
-    import Card from './solution/index.js';
+    // import Card from './index.js';
 
     const product = {
       "id": "76w0hz7015kkr9kjkav",
@@ -32,9 +33,51 @@
       "brand": "acer"
     };
 
-    const card = new Card(product);
 
-    root.append(card.element);
+class Component {
+  constructor (someProduct) {
+    this.componentProduct = someProduct;
+    this.myRender();
+  }
+
+  
+  getMyTemplate () {
+    return `
+    <div class="card-component">
+      <div class="card-component-foto">
+        <img src="${this.componentProduct.images[0]}" alt="foto">
+      </div>
+      <div class="card-component-rating-and-price">
+        <div class="card-component-rating">
+        <div class="card-component-rating-number">${this.componentProduct.rating}</div>
+        <div class="card-component-rating-star">
+          <i class="bi bi-star"></i>
+        </div>
+        </div>
+        <div>${this.componentProduct.price}</div>
+      </div>
+      <div class="card-component-about">
+        <p>${this.componentProduct.title}</p>
+        <p>${this.componentProduct.category}</p>
+      </div>
+      <button class="card-component-add-to-cart">ADD TO CART</button>
+    </div>
+    `;
+  }
+
+  
+  myRender () {
+    const element = document.createElement('div');
+    element.innerHTML = this.getMyTemplate();
+    this.componentElement = element;
+  }
+}
+const obj3 = new Component(product);
+
+const myRootElement = document.querySelector('#root');
+
+myRootElement.append(obj3.componentElement);
+
   </script>
 </body>
 </html>
